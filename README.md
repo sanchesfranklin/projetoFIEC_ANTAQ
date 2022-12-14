@@ -13,19 +13,19 @@ Para o funcionamento do Spark, precisei criar um Dockerfile, para realizar a ins
 
 ### Utilizando o Projeto ###
 
-- Clone do repositório
+#### Clone do repositório ####
 git clone https://github.com/sanchesfranklin/projetoFIEC_ANTAQ.git
 
-- Configurando o usuário correto para uso do Airflow (Linux)
+#### Configurando o usuário correto para uso do Airflow (Linux) ####
 echo -e "AIRFLOW_UID=$(id -u)" > .env
 
-- Inicializando o projeto
+#### Inicializando o projeto ####
 docker-compose up -d --build
 
-- Abrindo a Interface
+#### Abrindo a Interface ####
 http://localhost:8080
 
-- Credenciais
+#### Credenciais ####
 Login: airflow
 Senha: airflow
 
